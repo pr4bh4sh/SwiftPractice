@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Life View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LifeViewController" customModule="Life" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="life">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3MK-Fw-vyp">
+                                <rect key="frame" x="100" y="199" width="51" height="31"/>
+                                <connections>
+                                    <action selector="updateSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="WAX-uf-d1z"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2gK-Ub-m3j">
+                                <rect key="frame" x="100" y="265" width="51" height="31"/>
+                                <connections>
+                                    <action selector="updateSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZAz-Ro-dmJ"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hqo-Jt-Adf">
+                                <rect key="frame" x="100" y="334" width="51" height="31"/>
+                                <connections>
+                                    <action selector="updateSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="i6l-dT-7QB"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUn-KB-s84">
+                                <rect key="frame" x="203" y="204" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Life" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5n-o4-jQk">
+                                <rect key="frame" x="203" y="270" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHo-zu-s3K">
+                                <rect key="frame" x="203" y="339" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3MK-Fw-vyp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="179" id="2U6-Dx-fe9"/>
+                            <constraint firstItem="qHo-zu-s3K" firstAttribute="leading" secondItem="sUn-KB-s84" secondAttribute="leading" id="9zi-zM-RXL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hqo-Jt-Adf" secondAttribute="bottom" constant="302" id="Iwy-k6-ogz"/>
+                            <constraint firstItem="sUn-KB-s84" firstAttribute="leading" secondItem="3MK-Fw-vyp" secondAttribute="trailing" constant="54" id="JtK-wn-eJH"/>
+                            <constraint firstItem="t5n-o4-jQk" firstAttribute="top" secondItem="sUn-KB-s84" secondAttribute="bottom" constant="45" id="QIs-SD-obA"/>
+                            <constraint firstItem="Hqo-Jt-Adf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="Yaz-LT-bUB"/>
+                            <constraint firstItem="qHo-zu-s3K" firstAttribute="top" secondItem="t5n-o4-jQk" secondAttribute="bottom" constant="48" id="ZO0-Ix-W1n"/>
+                            <constraint firstItem="t5n-o4-jQk" firstAttribute="leading" secondItem="2gK-Ub-m3j" secondAttribute="trailing" constant="54" id="aFn-PM-MpG"/>
+                            <constraint firstItem="3MK-Fw-vyp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="bO7-Bi-s1F"/>
+                            <constraint firstItem="qHo-zu-s3K" firstAttribute="leading" secondItem="t5n-o4-jQk" secondAttribute="leading" id="dMZ-bQ-BZd"/>
+                            <constraint firstItem="qHo-zu-s3K" firstAttribute="leading" secondItem="Hqo-Jt-Adf" secondAttribute="trailing" constant="54" id="hvN-WX-LJ0"/>
+                            <constraint firstItem="2gK-Ub-m3j" firstAttribute="top" secondItem="3MK-Fw-vyp" secondAttribute="bottom" constant="35" id="lAF-wV-7Me"/>
+                            <constraint firstItem="Hqo-Jt-Adf" firstAttribute="centerY" secondItem="qHo-zu-s3K" secondAttribute="centerY" id="lZt-tx-RJK"/>
+                            <constraint firstItem="Hqo-Jt-Adf" firstAttribute="top" secondItem="2gK-Ub-m3j" secondAttribute="bottom" constant="38" id="lb6-ig-okX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sleepSwitch" destination="Hqo-Jt-Adf" id="5Kc-qP-xLw"/>
+                        <outlet property="socialLifeSwitch" destination="2gK-Ub-m3j" id="b9h-Ha-Nex"/>
+                        <outlet property="workSwitch" destination="3MK-Fw-vyp" id="ux2-Qe-Jf4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
